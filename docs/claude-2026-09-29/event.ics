@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShowUp Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:claude-2026-09-29@debszabo.com
+DTSTAMP:20260927T034324Z
+DTSTART:20260929T010000Z
+DTEND:20260929T020000Z
+SUMMARY:Free Masterclass: How to Set Up Claude for Your Business
+DESCRIPTION:Claude has made some big updates. I'll walk you through what's
+  new and what it means for your business\, so Claude does real work\, not
+  just chat.\n\nBring your questions.\n\nJoin on Zoom: https://us06web.zoo
+ m.us/j/84690623137
+LOCATION:https://us06web.zoom.us/j/84690623137
+URL:https://us06web.zoom.us/j/84690623137
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:How to Set Up Claude for Your Business
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:How to Set Up Claude for Your Business
+END:VALARM
+END:VEVENT
+END:VCALENDAR

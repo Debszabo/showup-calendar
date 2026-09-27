@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShowUp Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chatgpt-codex-2026-10-01@debszabo.com
+DTSTAMP:20260927T034324Z
+DTSTART:20261001T010000Z
+DTEND:20261001T020000Z
+SUMMARY:Free Masterclass: How to Use ChatGPT Codex for Your Business
+DESCRIPTION:Learn how to use ChatGPT Codex to get real work done in your b
+ usiness\, not just chat.\n\nBring your questions. I'll share my setup pla
+ ybook live.\n\nJoin on Zoom: https://us06web.zoom.us/j/84690623137
+LOCATION:https://us06web.zoom.us/j/84690623137
+URL:https://us06web.zoom.us/j/84690623137
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:How to Use ChatGPT Codex for Your Business
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:How to Use ChatGPT Codex for Your Business
+END:VALARM
+END:VEVENT
+END:VCALENDAR

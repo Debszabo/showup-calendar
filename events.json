@@ -1,0 +1,34 @@
+{
+  "site_name": "Deb Szabo",
+  "organiser_email": "connect@debszabo.com",
+  "events": [
+    {
+      "slug": "claude-2026-09-29",
+      "title": "Free Masterclass: How to Set Up Claude for Your Business",
+      "short_title": "How to Set Up Claude for Your Business",
+      "start": "2026-09-29T11:00:00+10:00",
+      "end": "2026-09-29T12:00:00+10:00",
+      "display_when": "Tuesday 29 September, 11am AEST (Sydney)",
+      "location": "https://us06web.zoom.us/j/84690623137",
+      "details": "Claude has made some big updates. I'll walk you through what's new and what it means for your business, so Claude does real work, not just chat.\n\nBring your questions.\n\nJoin on Zoom: https://us06web.zoom.us/j/84690623137",
+      "reminders_minutes": [
+        1440,
+        30
+      ]
+    },
+    {
+      "slug": "chatgpt-codex-2026-10-01",
+      "title": "Free Masterclass: How to Use ChatGPT Codex for Your Business",
+      "short_title": "How to Use ChatGPT Codex for Your Business",
+      "start": "2026-10-01T11:00:00+10:00",
+      "end": "2026-10-01T12:00:00+10:00",
+      "display_when": "Thursday 1 October, 11am AEST (Sydney)",
+      "location": "https://us06web.zoom.us/j/84690623137",
+      "details": "Learn how to use ChatGPT Codex to get real work done in your business, not just chat.\n\nBring your questions. I'll share my setup playbook live.\n\nJoin on Zoom: https://us06web.zoom.us/j/84690623137",
+      "reminders_minutes": [
+        1440,
+        30
+      ]
+    }
+  ]
+}
