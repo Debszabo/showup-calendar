@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
 
+BASE_URL = "https://debszabo.github.io/showup-calendar/"
 SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "events.json")
 OUT = Path(sys.argv[2] if len(sys.argv) > 2 else "site")
 
@@ -126,6 +127,20 @@ h1{{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}}
 """
 
 
+EMAIL = """<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;margin:8px 0 24px 0;">
+<tr><td colspan="2" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#030529;padding:0 0 10px 0;">Add it to your calendar</td></tr>
+<tr>
+<td style="padding:0 8px 8px 0;"><a href="{google}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Google</a></td>
+<td style="padding:0 0 8px 0;"><a href="{ics}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Apple</a></td>
+</tr>
+<tr>
+<td style="padding:0 8px 0 0;"><a href="{outlook}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Outlook</a></td>
+<td><a href="{ics}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Other</a></td>
+</tr>
+</table>
+"""
+
+
 def main():
     cfg = json.loads(SRC.read_text())
     OUT.mkdir(parents=True, exist_ok=True)
@@ -142,6 +157,9 @@ def main():
         (folder / "index.html").write_text(PAGE.format(
             short=html.escape(ev["short_title"]), when=html.escape(ev["display_when"]),
             slug=ev["slug"], **{k: html.escape(v) for k, v in l.items()}))
+        (folder / "email.html").write_text(EMAIL.format(
+            google=html.escape(l["google"]), outlook=html.escape(l["office"]),
+            ics=html.escape(BASE_URL + ev["slug"] + "/event.ics")))
         print("built", ev["slug"])
 
 
