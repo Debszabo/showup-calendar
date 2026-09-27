@@ -30,8 +30,8 @@ h1{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}
 <h1>Add it to your calendar</h1>
 <p class="event">How to Use ChatGPT Codex for Your Business</p>
 <p class="when">Thursday 1 October, 11am AEST (Sydney)</p>
+<a class="btn primary" data-k="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Free%20Masterclass%3A%20How%20to%20Use%20ChatGPT%20Codex%20for%20Your%20Business&amp;dates=20261001T010000Z/20261001T020000Z&amp;details=Learn%20how%20to%20use%20ChatGPT%20Codex%20to%20get%20real%20work%20done%20in%20your%20business%2C%20not%20just%20chat.%0A%0ABring%20your%20questions.%20I%27ll%20share%20my%20setup%20playbook%20live.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us06web.zoom.us/j/84690623137&amp;location=https%3A//us06web.zoom.us/j/84690623137" target="_blank" rel="noopener">Google Calendar <span>Android, Gmail</span></a>
 <a class="btn" data-k="apple" href="event.ics">Apple Calendar <span>iPhone, iPad, Mac</span></a>
-<a class="btn" data-k="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Free%20Masterclass%3A%20How%20to%20Use%20ChatGPT%20Codex%20for%20Your%20Business&amp;dates=20261001T010000Z/20261001T020000Z&amp;details=Learn%20how%20to%20use%20ChatGPT%20Codex%20to%20get%20real%20work%20done%20in%20your%20business%2C%20not%20just%20chat.%0A%0ABring%20your%20questions.%20I%27ll%20share%20my%20setup%20playbook%20live.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us06web.zoom.us/j/84690623137&amp;location=https%3A//us06web.zoom.us/j/84690623137" target="_blank" rel="noopener">Google Calendar <span>Android, Gmail</span></a>
 <a class="btn" data-k="outlook" href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&amp;rru=addevent&amp;subject=Free%20Masterclass%3A%20How%20to%20Use%20ChatGPT%20Codex%20for%20Your%20Business&amp;startdt=2026-10-01T01%3A00%3A00Z&amp;enddt=2026-10-01T02%3A00%3A00Z&amp;body=Learn%20how%20to%20use%20ChatGPT%20Codex%20to%20get%20real%20work%20done%20in%20your%20business%2C%20not%20just%20chat.%0A%0ABring%20your%20questions.%20I%27ll%20share%20my%20setup%20playbook%20live.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us06web.zoom.us/j/84690623137&amp;location=https%3A//us06web.zoom.us/j/84690623137" target="_blank" rel="noopener">Outlook <span>Hotmail, Outlook.com</span></a>
 <a class="btn" data-k="office" href="https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&amp;rru=addevent&amp;subject=Free%20Masterclass%3A%20How%20to%20Use%20ChatGPT%20Codex%20for%20Your%20Business&amp;startdt=2026-10-01T01%3A00%3A00Z&amp;enddt=2026-10-01T02%3A00%3A00Z&amp;body=Learn%20how%20to%20use%20ChatGPT%20Codex%20to%20get%20real%20work%20done%20in%20your%20business%2C%20not%20just%20chat.%0A%0ABring%20your%20questions.%20I%27ll%20share%20my%20setup%20playbook%20live.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us06web.zoom.us/j/84690623137&amp;location=https%3A//us06web.zoom.us/j/84690623137" target="_blank" rel="noopener">Office 365 <span>Work accounts</span></a>
 <a class="btn" data-k="yahoo" href="https://calendar.yahoo.com/?v=60&amp;title=Free%20Masterclass%3A%20How%20to%20Use%20ChatGPT%20Codex%20for%20Your%20Business&amp;st=20261001T010000Z&amp;et=20261001T020000Z&amp;desc=Learn%20how%20to%20use%20ChatGPT%20Codex%20to%20get%20real%20work%20done%20in%20your%20business%2C%20not%20just%20chat.%0A%0ABring%20your%20questions.%20I%27ll%20share%20my%20setup%20playbook%20live.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us06web.zoom.us/j/84690623137&amp;in_loc=https%3A//us06web.zoom.us/j/84690623137" target="_blank" rel="noopener">Yahoo Calendar</a>
@@ -39,14 +39,5 @@ h1{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}
 <p class="note">Your Zoom link is saved inside the calendar entry, so it's there when you need it.</p>
 <p class="made">Made with <a href="https://github.com/Debszabo/showup-calendar">ShowUp Calendar</a></p>
 </main>
-<script>
-(function(){
-  var ua=navigator.userAgent||"";
-  var k=/iPhone|iPad|iPod|Macintosh/.test(ua)?"apple":/Android/.test(ua)?"google":null;
-  if(!k)return;
-  var b=document.querySelector('[data-k="'+k+'"]');
-  if(b){b.classList.add("primary");b.parentNode.insertBefore(b,b.parentNode.querySelector(".btn"));}
-})();
-</script>
 </body>
 </html>

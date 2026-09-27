@@ -114,8 +114,8 @@ h1{{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}}
 <h1>Add it to your calendar</h1>
 <p class="event">{short}</p>
 <p class="when">{when}</p>
+<a class="btn primary" data-k="google" href="{google}" target="_blank" rel="noopener">Google Calendar <span>Android, Gmail</span></a>
 <a class="btn" data-k="apple" href="event.ics">Apple Calendar <span>iPhone, iPad, Mac</span></a>
-<a class="btn" data-k="google" href="{google}" target="_blank" rel="noopener">Google Calendar <span>Android, Gmail</span></a>
 <a class="btn" data-k="outlook" href="{outlook}" target="_blank" rel="noopener">Outlook <span>Hotmail, Outlook.com</span></a>
 <a class="btn" data-k="office" href="{office}" target="_blank" rel="noopener">Office 365 <span>Work accounts</span></a>
 <a class="btn" data-k="yahoo" href="{yahoo}" target="_blank" rel="noopener">Yahoo Calendar</a>
@@ -123,15 +123,6 @@ h1{{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}}
 <p class="note">Your Zoom link is saved inside the calendar entry, so it's there when you need it.</p>
 <p class="made">Made with <a href="https://github.com/Debszabo/showup-calendar">ShowUp Calendar</a></p>
 </main>
-<script>
-(function(){{
-  var ua=navigator.userAgent||"";
-  var k=/iPhone|iPad|iPod|Macintosh/.test(ua)?"apple":/Android/.test(ua)?"google":null;
-  if(!k)return;
-  var b=document.querySelector('[data-k="'+k+'"]');
-  if(b){{b.classList.add("primary");b.parentNode.insertBefore(b,b.parentNode.querySelector(".btn"));}}
-}})();
-</script>
 </body>
 </html>
 """
