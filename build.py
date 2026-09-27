@@ -134,6 +134,14 @@ EMAIL = """<table role="presentation" cellpadding="0" cellspacing="0" border="0"
 """
 
 
+REDIRECT = """<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Adding to your calendar</title>
+<meta http-equiv="refresh" content="0; url={url}"><script>location.replace({js});</script></head>
+<body style="font-family:Inter,system-ui,sans-serif;color:#030529;padding:40px 16px;text-align:center">
+<p>Opening your calendar&hellip;</p><p><a href="{url}" style="color:#030529">Tap here if nothing happens</a></p></body></html>
+"""
+
+
 def main():
     cfg = json.loads(SRC.read_text())
     OUT.mkdir(parents=True, exist_ok=True)
@@ -150,8 +158,13 @@ def main():
         (folder / "index.html").write_text(PAGE.format(
             short=html.escape(ev["short_title"]), when=html.escape(ev["display_when"]),
             slug=ev["slug"], **{k: html.escape(v) for k, v in l.items()}))
+        for name, target in (("google", l["google"]), ("outlook", l["office"])):
+            (folder / name).mkdir(exist_ok=True)
+            (folder / name / "index.html").write_text(
+                REDIRECT.format(url=html.escape(target), js=json.dumps(target)))
+        short = BASE_URL + ev["slug"] + "/"
         (folder / "email.html").write_text(EMAIL.format(
-            google=html.escape(l["google"]), outlook=html.escape(l["office"]),
+            google=html.escape(short + "google/"), outlook=html.escape(short + "outlook/"),
             ics=html.escape(BASE_URL + ev["slug"] + "/event.ics")))
         print("built", ev["slug"])
 
