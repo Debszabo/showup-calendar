@@ -127,16 +127,9 @@ h1{{font:600 30px/1.15 "League Spartan",system-ui,sans-serif;margin:0 0 10px}}
 """
 
 
-EMAIL = """<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;margin:8px 0 24px 0;">
-<tr><td colspan="2" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#030529;padding:0 0 10px 0;">Add it to your calendar</td></tr>
-<tr>
-<td style="padding:0 8px 8px 0;"><a href="{google}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Google</a></td>
-<td style="padding:0 0 8px 0;"><a href="{ics}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Apple</a></td>
-</tr>
-<tr>
-<td style="padding:0 8px 0 0;"><a href="{outlook}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Outlook</a></td>
-<td><a href="{ics}" target="_blank" style="display:block;width:150px;background:#030529;color:#1BF2AF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;padding:14px 0;border-radius:10px;">Other</a></td>
-</tr>
+EMAIL = """<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 24px 0;">
+<tr><td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#030529" align="center" style="background-color:#030529;border-radius:10px;"><a href="{google}" target="_blank" style="display:inline-block;width:150px;padding:14px 0;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#1BF2AF;text-decoration:none;text-align:center;"><span style="color:#1BF2AF;">Google</span></a></td></tr></table></td><td style="padding:0 0 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#030529" align="center" style="background-color:#030529;border-radius:10px;"><a href="{ics}" target="_blank" style="display:inline-block;width:150px;padding:14px 0;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#1BF2AF;text-decoration:none;text-align:center;"><span style="color:#1BF2AF;">Apple</span></a></td></tr></table></td></tr>
+<tr><td style="padding:0 8px 0 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#030529" align="center" style="background-color:#030529;border-radius:10px;"><a href="{outlook}" target="_blank" style="display:inline-block;width:150px;padding:14px 0;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#1BF2AF;text-decoration:none;text-align:center;"><span style="color:#1BF2AF;">Outlook</span></a></td></tr></table></td><td style="padding:0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#030529" align="center" style="background-color:#030529;border-radius:10px;"><a href="{ics}" target="_blank" style="display:inline-block;width:150px;padding:14px 0;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#1BF2AF;text-decoration:none;text-align:center;"><span style="color:#1BF2AF;">Other calendar</span></a></td></tr></table></td></tr>
 </table>
 """
 
