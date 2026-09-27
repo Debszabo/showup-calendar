@@ -134,6 +134,10 @@ EMAIL = """<table role="presentation" cellpadding="0" cellspacing="0" border="0"
 """
 
 
+EMAIL_PS = """<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5;font-style:italic;color:#5D6178;margin:16px 0 0 0;">P.S. Heads up, if you see a &ldquo;Redirect Notice&rdquo; when you tap the calendar link, it&rsquo;s all good. It&rsquo;s just your email doing a standard safety check. Tap the link and it&rsquo;ll save straight in.</p>
+"""
+
+
 REDIRECT = """<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>Adding to your calendar</title>
 <meta http-equiv="refresh" content="0; url={url}"><script>location.replace({js});</script></head>
@@ -166,6 +170,7 @@ def main():
         (folder / "email.html").write_text(EMAIL.format(
             google=html.escape(short + "google/"), outlook=html.escape(short + "outlook/"),
             ics=html.escape(BASE_URL + ev["slug"] + "/event.ics")))
+        (folder / "email-ps.html").write_text(EMAIL_PS)
         print("built", ev["slug"])
 
 
