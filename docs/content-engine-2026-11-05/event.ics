@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShowUp Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:content-engine-2026-11-05@debszabo.com
+DTSTAMP:20261028T141818Z
+DTSTART:20261105T000000Z
+DTEND:20261105T010000Z
+SUMMARY:Free Masterclass: Build Your Content Engine with Claude
+DESCRIPTION:Live masterclass and demonstration with Deb Szabo. Plan\, film
+ \, edit and publish your social media videos\, all from one conversation.
+  The system works with Claude or ChatGPT Codex.\n\nYour private joining l
+ ink is in your registration confirmation email.
+LOCATION:Online on Zoom — see your registration confirmation email
+URL:Online on Zoom — see your registration confirmation email
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:Build Your Content Engine with Claude
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Build Your Content Engine with Claude
+END:VALARM
+END:VEVENT
+END:VCALENDAR
