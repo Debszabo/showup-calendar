@@ -43,6 +43,20 @@
         1440,
         30
       ]
+    },
+    {
+      "slug": "ai-for-wine-tourism-2026-11-17",
+      "title": "Free Masterclass: AI for Wine + Tourism",
+      "short_title": "AI for Wine + Tourism",
+      "start": "2026-11-17T11:00:00+11:00",
+      "end": "2026-11-17T12:00:00+11:00",
+      "display_when": "Tuesday 17 November, 11am AEDT (Sydney)",
+      "location": "https://us06web.zoom.us/j/84090545315",
+      "details": "Free live masterclass with Deb Szabo. Practical ways direct-to-consumer wineries can use AI across the cellar door, wine club, events, winery, inventory, production and vineyard.\n\nJoin on Zoom: https://us06web.zoom.us/j/84090545315",
+      "reminders_minutes": [
+        1440,
+        30
+      ]
     }
   ]
 }

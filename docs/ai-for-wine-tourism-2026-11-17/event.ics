@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShowUp Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ai-for-wine-tourism-2026-11-17@debszabo.com
+DTSTAMP:20261103T010150Z
+DTSTART:20261117T000000Z
+DTEND:20261117T010000Z
+SUMMARY:Free Masterclass: AI for Wine + Tourism
+DESCRIPTION:Free live masterclass with Deb Szabo. Practical ways direct-to
+ -consumer wineries can use AI across the cellar door\, wine club\, events
+ \, winery\, inventory\, production and vineyard.\n\nJoin on Zoom: https:/
+ /us06web.zoom.us/j/84090545315
+LOCATION:https://us06web.zoom.us/j/84090545315
+URL:https://us06web.zoom.us/j/84090545315
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:AI for Wine + Tourism
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:AI for Wine + Tourism
+END:VALARM
+END:VEVENT
+END:VCALENDAR
