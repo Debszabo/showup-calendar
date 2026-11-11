@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShowUp Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edit-videos-with-claude-2026-11-24@debszabo.com
+DTSTAMP:20261111T212131Z
+DTSTART:20261123T230000Z
+DTEND:20261124T000000Z
+SUMMARY:Free Masterclass: How to Edit Videos with Claude
+DESCRIPTION:Free live masterclass with Deb Szabo. How to edit professional
+ -looking videos with Claude that get you more business\, using the Conten
+ t Engine system from plan to publish.\n\nYour private joining link is in 
+ your registration confirmation email.
+LOCATION:Online on Zoom. Your joining link is in your confirmation email.
+URL:Online on Zoom. Your joining link is in your confirmation email.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:How to Edit Videos with Claude
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:How to Edit Videos with Claude
+END:VALARM
+END:VEVENT
+END:VCALENDAR

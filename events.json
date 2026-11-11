@@ -57,6 +57,20 @@
         1440,
         30
       ]
+    },
+    {
+      "slug": "edit-videos-with-claude-2026-11-24",
+      "title": "Free Masterclass: How to Edit Videos with Claude",
+      "short_title": "How to Edit Videos with Claude",
+      "start": "2026-11-24T10:00:00+11:00",
+      "end": "2026-11-24T11:00:00+11:00",
+      "display_when": "Tuesday 24 November, 10am AEDT (Sydney)",
+      "location": "Online on Zoom. Your joining link is in your confirmation email.",
+      "details": "Free live masterclass with Deb Szabo. How to edit professional-looking videos with Claude that get you more business, using the Content Engine system from plan to publish.\n\nYour private joining link is in your registration confirmation email.",
+      "reminders_minutes": [
+        1440,
+        30
+      ]
     }
   ]
 }
